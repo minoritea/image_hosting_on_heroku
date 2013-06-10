@@ -1,3 +1,8 @@
+production:
+  sessions:
+    default:
+      uri: <%= ENV['MONGOHQ_URL'] %>
+
 development:
   # Configure available database sessions. (required)
   sessions:
@@ -28,7 +33,7 @@ development:
         # operation on failure. (default: 1)
         # retry_interval: 1
   # Configure Mongoid specific options. (optional)
-  options:
+  # options:
     # Configuration for whether or not to allow access to fields that do
     # not have a field definition on the model. (default: true)
     # allow_dynamic_fields: true
@@ -66,10 +71,11 @@ development:
 
     # Ensure all times are UTC in the app side. (default: false)
     # use_utc: false
+
 test:
   sessions:
     default:
-      database: image_hosting_test
+      database: maprice_test
       hosts:
         - localhost:27017
       options:
