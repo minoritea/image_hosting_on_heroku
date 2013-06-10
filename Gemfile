@@ -41,6 +41,7 @@ gem 'unicorn'
 # gem 'debugger'
 
 group :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', group: :development
   gem 'mongoid-rspec'
+  gem 'factory_girl_rails'
 end
