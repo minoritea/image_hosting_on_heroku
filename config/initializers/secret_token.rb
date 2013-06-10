@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-ImageHosting::Application.config.secret_token = '0ee0d64388e4d75b4ae306be6ff3cfc945bc414a8a7dd911a5aebfe2c7c26a1ed726d49e57b5c48b7072c8b01173510e543e7086c8ba225af97f6f4a75c98978'
+ImageHosting::Application.config.secret_token = '88a92ea33ebb4ef94df068c032192cc87e98af3c50facfd5cad8399487b9b03e933b226b8e4899d5156c18732bc8f025c2a293dc9a65cf667f9fbd3c96bae25a'
