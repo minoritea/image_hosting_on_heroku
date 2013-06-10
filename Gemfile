@@ -39,3 +39,8 @@ gem 'unicorn'
 
 # To use debugger
 # gem 'debugger'
+
+group :test do
+  gem 'rspec-rails'
+  gem 'mongoid-rspec'
+end
