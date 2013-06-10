@@ -1,1 +1,17 @@
 <div>Welcome! <%=current_user.email%></div>
+<form action="/admin/create" method="post"
+      enctype="multipart/form-data">
+  <input name="image" type="file" />
+  <input type="submit" />
+  <%= hidden_field_tag "authenticity_token", form_authenticity_token %>
+  <%if @f%>
+  <div><%=@f.inspect%></div>
+  <%end%>
+</form>
+<br>
+<%Image.all.each do |img|%>
+<div>
+  <%=image_tag "/images/#{img.id}"%>
+<div><%=img.id%></div>
+</div>
+<%end%>

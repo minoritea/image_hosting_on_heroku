@@ -29,4 +29,5 @@ ImageHosting::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  ENV['TMPDIR'] = Rails.root.join('tmp').to_s + '/images'
 end
