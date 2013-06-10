@@ -11,6 +11,13 @@ gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 
+#for authentication
+gem 'devise'
+
+#for uploading
+#gem 'carrierwave'
+#gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
